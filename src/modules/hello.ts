@@ -1,20 +1,20 @@
-import { listener, Module, slashCommand } from '@pikokr/command.ts'
+import { command, listener, Module, rest } from '@pikokr/command.ts'
 import { Client } from '../structures/client'
-import { SlashCommandBuilder } from '@discordjs/builders'
-import { CommandInteraction } from 'discord.js'
+import { Message } from 'discord.js'
 
 class Hello extends Module {
     constructor(private cts: Client) {
         super()
     }
 
-    @slashCommand({
-        command: new SlashCommandBuilder().setName('test').setDescription('호애애'),
-    })
-    async test(i: CommandInteraction) {
-        await i.reply({
-            content: '호애애애애',
-            ephemeral: true,
+    @command({name: '말하기'})
+    async say(msg: Message, @rest content: string) {
+        if (!content) content = '내용이 없네요!'
+        await msg.channel.send({
+            content,
+            allowedMentions: {
+                parse: []
+            }
         })
     }
 
