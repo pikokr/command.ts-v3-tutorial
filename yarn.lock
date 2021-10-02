@@ -69,6 +69,11 @@
     node-fetch "^2.6.1"
     tslib "^2.3.0"
 
+"@pikokr/command.ts-views@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@pikokr/command.ts-views/-/command.ts-views-1.0.1.tgz#2e40d6a7eb51a9daa8863d418b7b27534fdf2d5a"
+  integrity sha512-bN02n/hj9YvD+DeSi6iRTXg3sLaayn/TC8ghelHr0T0s1EkKSTiqhsZCANoxhfvY6q/ZZW4tZcCP0cV0H6pLYw==
+
 "@pikokr/command.ts@^3.0.6":
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/@pikokr/command.ts/-/command.ts-3.0.6.tgz#b8045390822b0d971fc4f3db954452b4f59e6150"

@@ -12,6 +12,7 @@
     "@discordjs/builders": "^0.6.0",
     "@discordjs/rest": "^0.1.0-canary.0",
     "@pikokr/command.ts": "^3.0.6",
+    "@pikokr/command.ts-views": "^1.0.1",
     "discord-api-types": "^0.23.1",
     "discord.js": "^13.1.0"
   },
